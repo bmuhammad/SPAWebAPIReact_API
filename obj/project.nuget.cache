@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TfVxI2BjuVo=",
+  "dgSpecHash": "tp+Tzb6+8r8=",
   "success": true,
   "projectFilePath": "C:\\Users\\brian\\globo\\Api\\Api.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\brian\\.nuget\\packages\\minivalidation\\0.9.1\\minivalidation.0.9.1.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\brian\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
