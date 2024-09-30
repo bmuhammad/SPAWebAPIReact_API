@@ -2,25 +2,27 @@ using Microsoft.EntityFrameworkCore;
 
 
 
-public class HouseDbContext: DbContext
+public class HouseDbContext : DbContext
 {
 
-  public HouseDbContext(DbContextOptions<HouseDbContext> o):
-  base(o) {
-    
+  public HouseDbContext(DbContextOptions<HouseDbContext> o) :
+  base(o)
+  {
+
   }
-    public DbSet<HouseEntity> Houses => Set<HouseEntity>();
+  public DbSet<HouseEntity> Houses => Set<HouseEntity>();
+  public DbSet<BidEntity> Bids => Set<BidEntity>();
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-       var folder = Environment.SpecialFolder.LocalApplicationData;
-       var path = Environment.GetFolderPath(folder);
-       optionsBuilder
-       .UseSqlite($"Data Source={Path.Join(path, "houses.db")}");
-    }
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    var folder = Environment.SpecialFolder.LocalApplicationData;
+    var path = Environment.GetFolderPath(folder);
+    optionsBuilder
+    .UseSqlite($"Data Source={Path.Join(path, "houses.db")}");
+  }
 
-      protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        SeedData.Seed(modelBuilder);
-    }
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+    SeedData.Seed(modelBuilder);
+  }
 }
