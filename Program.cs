@@ -63,7 +63,7 @@ IHouseRepository repo) =>
         statusCode: 404);
     var updatedHouse = await repo.Update(dto);
     return Results.Ok(updatedHouse);
-}).ProducesValidationProblem().Produces<HouseDetailDto>(StatusCodes.Status200OK);
+}).ProducesValidationProblem().ProducesProblem(404).Produces<HouseDetailDto>(StatusCodes.Status200OK);
 
 //Endpoint for deleting houses
 app.MapDelete("/houses/{houseId:int}", async (int houseId,
