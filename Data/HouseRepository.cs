@@ -20,7 +20,7 @@ public class HouseRepository : IHouseRepository
 
     private static HouseDetailDto EntityToDetailDto(HouseEntity e)
     {
-        return new HouseDetailDto(e.Id, e.Address, e.Country, e.Price, e.Description, e.Photo);
+        return new HouseDetailDto(e.Id, e.Address, e.Country, e.Description, e.Price,  e.Photo);
     }
     private static void DtoToEntity(HouseDetailDto dto, HouseEntity e)
     {
